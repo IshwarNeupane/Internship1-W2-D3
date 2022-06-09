@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 1em;
+        }
+        header{
+            background: #8f04d0;
+            height: 10em;
+            width: auto;
+        }
+        section{
+            position: relative;
+            width: auto;
+            height: max-content;
+        }
+        .aside{
+            background:#007bff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 70%;
+            height: 18em;
+        }
+        section span{
+            display: block;
+            height: 3em;
+            width: 13em;
+            background: #007bff;
+            margin: 2em 0;
+        }
+        footer{
+            background: #007bff;
+            height: 10em;
+            width: auto;
+        }
+        /*Tablet view*/
+        @media only screen and (max-width: 700px){
+            section{
+                height: 33em;
+                margin: 2em 0 ; 
+            }
+            .aside{
+                top: 60%;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height: 10em; 
+            }
+            footer{
+                margin-top: -2.9em;
+            }
+        }
+         /*Mobile view*/
+         @media only screen and (max-width: 400px){
+            section  span{
+            width: 100%;              
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="aside"></div>
+    </section>
+    <footer></footer>
+</body>
+</html>
